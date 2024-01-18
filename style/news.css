@@ -12,8 +12,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 } 
-
-
 /* -----------------------HEADER START------------------------- */
 a {
     text-decoration: none;
@@ -56,6 +54,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .content {
@@ -69,65 +68,24 @@ header {
 /* -------------------------- HEADER END--------------------- */
 
 
-/* -----------------------MAIN START------------------------- */
-main{
-    width: 100%;
-    height: 90%;
-}
-.words{
-    font-size: 125px;
-    padding-right: 250px;
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
-    color: #FFFFFF;
-    box-shadow: inset 6px;
-    padding-top: 100px;
-}
 
-.main_container{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-h1 span{
-    font-size: larger;
-}
-.one{
-    text-align: left;
-    padding-left: 4px;
-}
-.two{
-    text-align: center;
-}
-.three{
-    text-align: right;
-}
-/* ------------------------MAIN END--------------------------- */
-
-
-/* --------------------------FOOTER START--------------------- */
-footer{
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 155px;
-}
-/* --------------------------FOOTER END----------------------- */
-
-
-/* --------------------------NEWS START----------------------- */
 
 /* --------------------------MAIN START----------------------- */
+main {
+    width: 1140px;
+    margin: -30px auto 30px;
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
 section {
     width: 540px;
     padding: 15px;
     background: #FFFFFF;
     border-radius: 6px;
+    margin: 20px;
 }
 .news_title {
     margin: 20px 0 10px;
@@ -171,3 +129,21 @@ section {
     font-size: 16px;
     color: #9B9B9B;
 }
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+/* ------------------------MAIN END--------------------------- */
+
+/* --------------------------FOOTER START--------------------- */
+footer{
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 155px;
+}
+/* --------------------------FOOTER END----------------------- */
